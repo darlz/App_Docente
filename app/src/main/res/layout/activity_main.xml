@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tivi.appinicio.MainActivity"
+    android:background="@drawable/fondo">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnAlumnos"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:background="@drawable/estudiante"
+             />
+
+        <Button
+            android:id="@+id/btnMaterias"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/materias"
+            android:text="MATERIAS"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tivi.appinicio">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+
+        </activity>
+        <activity android:name=".VistaEstudiantes.IngresarEstudiantes"
+            android:label="Agregar Estudiantes"
+            android:parentActivityName=".MainActivity"/>
+
+        <activity android:name=".VistaEstudiantes.ListadoEstudiantes"
+            android:label="Estudiantes Registrados"
+            android:parentActivityName=".VistaEstudiantes.IngresarEstudiantes"/>
+
+        <activity android:name=".VistaMaterias.IngresarMaterias"
+            android:label="Ingresar Materias"
+            android:parentActivityName=".VistaMaterias.IngresarMaterias"/>
+
+        <activity android:name=".VistaMaterias.ListarMaterias"
+            android:label="Materias Registradas"
+            android:parentActivityName=".VistaMaterias.IngresarMaterias"/>
+
+        <activity android:name=".Relacionando.Relacion_Mater_Alum"
+            android:label="Añadir Alumnos a Clase"
+            android:parentActivityName=".VistaMaterias.ListarMaterias"/>
+
+
+
+
+        <activity android:name=".Relacionando.ListarRelacion"
+            android:label="Alumnos de la Clase"
+            android:parentActivityName=".Relacionando.Relacion_Mater_Alum"/>
+
+        <activity android:name=".InsertParamtr"
+            android:label="Crear Parámetro"
+            android:parentActivityName=".VistaMaterias.ListarMaterias"/>
+
+        <activity android:name=".ListaParametro"
+            android:label="Parámetros Registrados"
+            android:parentActivityName=".Relacionando.ListarRelacion"/>
+
+        <activity android:name=".AddNota.InsertNote"
+            android:label="Notas Registradas"
+            android:parentActivityName=".ListaParametro"/>
+        <activity android:name=".AddNota.ListarNotas" />
+        <activity android:name=".Splash.splashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

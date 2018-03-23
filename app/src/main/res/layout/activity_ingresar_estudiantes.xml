@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tivi.appinicio.VistaEstudiantes.IngresarEstudiantes">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:paddingLeft="5dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="NOMBRES:"
+                    android:textColor="#080808"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="APELLIDOS:"
+                    android:textColor="#080808"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="EMAIL:"
+                    android:textColor="#080808"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="CELULAR:"
+                    android:textColor="#080808"
+                    android:textSize="17dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="CICLO"
+                    android:textColor="#080808"
+                    android:textSize="17dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:paddingLeft="5dp">
+
+                <EditText
+                    android:id="@+id/txt_nombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="NOMBRE"
+                    android:textColor="#080808"
+                    android:textSize="17dp"/>
+
+                <EditText
+                    android:id="@+id/txt_apellido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="APELLIDOS"
+                    android:textColor="#080808"
+                    android:textSize="17dp"
+                    android:layout_marginTop="5dp"/>
+
+                <EditText
+                    android:id="@+id/txt_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="EMAIL"
+                    android:textColor="#080808"
+                    android:textSize="17dp"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/txt_celular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="CELULAR"
+                    android:textColor="#080808"
+                    android:textSize="17dp"
+                    android:layout_marginTop="5dp"/>
+
+                <EditText
+                    android:id="@+id/txt_ciclo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="CICLO"
+                    android:textColor="#080808"
+                    android:textSize="17dp"
+                    android:layout_marginTop="8dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="50dp">
+
+            <Button
+                android:id="@+id/btn_ingresar"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="GUARDAR"
+                android:textSize="15dp"
+                android:textColor="#ffff"
+                android:textStyle="bold"
+                android:background="@drawable/fondobotonguardar"
+                />
+
+            <Button
+                android:id="@+id/btnListarAlumnos"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:text="LISTAR ALUMNOS"
+                android:textSize="15dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#ffff"
+                android:textStyle="bold"
+                android:background="@drawable/fondobotonlistar"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
